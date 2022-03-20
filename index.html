@@ -11,7 +11,18 @@
 <body>
     <h1>Hello World..</h1>
     <h4>Hello People..</h4>
-    <button onclick="alert('Button Clicked')">Click mee..</button>
+    <button class="btn">click mee..</button>
+    <button class="btn">click mee..</button>
+    <button class="btn">click mee..</button>
+    <button class="btn">click mee..</button>
+    <button class="btn">click mee..</button>
+    <button class="btn">click mee..</button>
+    <button class="btn">click mee..</button>
+    <script>
+        document.querySelectorAll('.btn').forEach(item => {
+            item.addEventListener('click', () => alert('This is hot..'))
+        })
+    </script>
 </body>
 
 </html>
